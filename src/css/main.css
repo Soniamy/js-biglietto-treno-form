@@ -103,7 +103,7 @@
 #main-bottom .insert-bottom:first-child {
     background-color: grey;
 }
-/*.hidden {
+.hidden {
     opacity: 0;
     transition: 0.5s;
 }
@@ -111,4 +111,4 @@
 .show {
     opacity: 1;
     transition: 0.5s;
-}*/
+}

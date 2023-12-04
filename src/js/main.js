@@ -35,5 +35,37 @@ btnGenerate.addEventListener(
         console.log('Prezzo dello sconto:', discount)
         console.log('Prezzo del biglietto finale:', finalPrice)
         console.log('Tipo di sconto:', discountType)
+        // creazione dati biglietto in pagina
+        document.getElementById('passenger').innerHTML = passengerName
+        document.getElementById('discount').innerHTML = discountType
+        document.getElementById('ticket-price').innerHTML = finalPrice + '€'
+
+        var wagonNumber = Math.floor(Math.random() * 9) + 1
+        console.log('Creazione numero di carrozza:', wagonNumber)
+        document.getElementById('wagon').innerHTML = wagonNumber
+
+        var cpCode = Math.floor(Math.random() * 10000) + 90000
+        console.log('Creazione numero CP:', cpCode)
+        document.getElementById('code-cp').innerHTML = cpCode
+
+        // apparizione sezione ticket
+        document.getElementById('ticket-section').className = 'bottom show'
     }
-)
+) // evento al click del pulsante Annulla
+
+var btnGenerate = document.getElementById('cancel')
+btnGenerate.addEventListener('click', function () {
+    // sparizione parametri ticket
+    document.getElementById('name').value = ''
+    document.getElementById('km').value = ''
+    document.getElementById('age').value = ''
+
+    document.getElementById('passenger').innerHTML = ''
+    document.getElementById('discount').innerHTML = ''
+    document.getElementById('ticket-price').innerHTML = ''
+    document.getElementById('wagon').innerHTML = ''
+    document.getElementById('code-cp').innerHTML = ''
+
+    // sparizione sezione ticket
+    document.getElementById('ticket-section').className = 'bottom hidden'
+})

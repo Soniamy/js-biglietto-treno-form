@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>TrainMarianna</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf8" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/general.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+               <section id="main-top">
+                   <h2>Calcola il prezzo del tuo biglietto</h2>
+                <div class="top">
+                    <div class="insert-top">
+                         <label for="name">Nome e Cognome</label>
+                        <input id="name" type="text" />
+                    </div>
+
+                    <div class="insert-top">
+                        <label for="km">Km da percorrere</label>
+                        <input id="km" type="number" />
+                    </div>
+
+                    <div class="insert-top">
+                        <label for="age">Età</label>
+                        <select name="scelta" id="age">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">Over 65</option>
+                        </select>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="#" id="generate" class="btn">Genera</a>
+                        <a href="#" id="cancel" class="btn">Annulla</a>
+                    </div>
+                </div>
+           </div>
+   
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
